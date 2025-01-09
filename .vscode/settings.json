@@ -1,3 +1,5 @@
 {
-    "dotnet.defaultSolution": "RandomPublisher.sln"
+    "dotnet.defaultSolution": "RandomPublisher.sln",
+    "IDX.aI.enableInlineCompletion": true,
+    "IDX.aI.enableCodebaseIndexing": true
 }

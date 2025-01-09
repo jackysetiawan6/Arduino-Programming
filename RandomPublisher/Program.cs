@@ -7,8 +7,17 @@ string iotEndpoint = "a1kwmoq0xfo7wp-ats.iot.us-east-1.amazonaws.com";
 int brokerPort = 8883;
 string topic = "sensor_group_03";
 
-var caCert = X509Certificate.CreateFromCertFile(Path.Join(AppContext.BaseDirectory, "resources\\AmazonRootCA1.pem"));
-var clientCert = new X509Certificate2(Path.Join(AppContext.BaseDirectory, "resources\\certificate.pfx"), "newCertificate");
+X509Certificate? caCert;
+X509Certificate2? clientCert;
+
+try {
+    caCert = X509Certificate.CreateFromCertFile(Path.Join(AppContext.BaseDirectory, "resources\\AmazonRootCA1.pem"));
+    clientCert = new X509Certificate2(Path.Join(AppContext.BaseDirectory, "resources\\certificate.pfx"), "newCertificate");
+} catch {
+    caCert = X509Certificate.CreateFromCertFile(Path.Join(AppContext.BaseDirectory, "resources/AmazonRootCA1.pem"));
+    clientCert = new X509Certificate2(Path.Join(AppContext.BaseDirectory, "resources/certificate.pfx"), "newCertificate");
+}
+
 var client = new MqttClient(iotEndpoint, brokerPort, true, caCert, clientCert, MqttSslProtocols.TLSv1_2);
 
 string clientId = Guid.NewGuid().ToString();
