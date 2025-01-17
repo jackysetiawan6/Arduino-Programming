@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/user/Arduino-Programming/RandomPublisher/RandomPublisher.csproj": {}
+    "D:\\Programming\\Arduino-Programming\\RandomPublisher\\RandomPublisher.csproj": {}
   },
   "projects": {
-    "/home/user/Arduino-Programming/RandomPublisher/RandomPublisher.csproj": {
+    "D:\\Programming\\Arduino-Programming\\RandomPublisher\\RandomPublisher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/user/Arduino-Programming/RandomPublisher/RandomPublisher.csproj",
+        "projectUniqueName": "D:\\Programming\\Arduino-Programming\\RandomPublisher\\RandomPublisher.csproj",
         "projectName": "RandomPublisher",
-        "projectPath": "/home/user/Arduino-Programming/RandomPublisher/RandomPublisher.csproj",
-        "packagesPath": "/home/user/.nuget/packages/",
-        "outputPath": "/home/user/Arduino-Programming/RandomPublisher/obj/",
+        "projectPath": "D:\\Programming\\Arduino-Programming\\RandomPublisher\\RandomPublisher.csproj",
+        "packagesPath": "C:\\Users\\Kang\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\Arduino-Programming\\RandomPublisher\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/user/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Kang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -64,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/nix/store/5frlf1hw11c11kdrnfinjyzisl75067x-dotnet-sdk-8.0.300/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
